@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="./Promass.css" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <div class="container pageLoader" id="pageLoader">
+      <img src="./Logo-white.svg" />
+      <span class="loader"></span>
+    </div>
+
+    <div class="container mainPage" id="mainPage">
+      <div class="black-shadow" id="black-shadow"></div>
+      <div class="blackgroundImage" id="blackgroundImage"></div>
+      <a
+        href="#"
+        id="close-button"
+        onclick="brazeBridge.logClick();brazeBridge.closeMessage()"
+      >
+        <img class="close-button" src="./back-button.svg" alt=""
+      /></a>
+      <object class="logo" data="./Logo.svg" type="image/svg+xml"></object>
+      <h1>¿Qué es?</h1>
+      <div class="text-description">
+        <p>Membresía de <span>protección</span> para tu:</p>
+        <div class="proteccion-iconos">
+          <div class="salud">
+            <img src="./corazon-blanco.svg" alt="" />
+            <p>Salud</p>
+          </div>
+          <div class="casa">
+            <img src="./hogar-blanco.svg" alt="" />
+            <p>Casa</p>
+          </div>
+          <div class="auto">
+            <img src="./auto-blanco.svg" alt="" />
+            <p>Auto</p>
+          </div>
+        </div>
+        <p>
+          Incluye: consultas médicas online, check up, grúa, cerrajero y más
+          <span>por solo $69 mxn al mes.</span>
+        </p>
+      </div>
+      <p>¡Recibe GRATIS tu primer mes!</p>
+      <button class="to-bottom" onclick="openNewPage('page2')">
+        Conoce más
+      </button>
+    </div>
+
+    <div class="container page2" id="page2">
+      <a href="#" onclick=" backMainPage('page2')" id="close-button">
+        <img class="close-button" src="./back-button.svg" alt=""
+      /></a>
+      <h2>¿Cuánto pagas por una membresía de asistencia?</h2>
+      <div class="two-cards-container">
+        <div class="left-card card">
+          <img src="./seguro-tradicional.png" />
+        </div>
+        <div class="right-card card">
+          <img src="./primer-mes.png" />
+        </div>
+      </div>
+      <p>¿Que incluye?</p>
+      <div class="service-pack-container">
+        <img src="./corazon.svg" alt="" />
+        <p>
+          <span class="service"
+            ><span class="service-hub">Prevención:</span> check up anual,
+            análisis de sangre, mastografía</span
+          >, electrocardiograma, papanicolau y más.
+        </p>
+      </div>
+      <div class="service-pack-container">
+        <img src="./diente.svg" alt="" />
+        <p>
+          <span class="service"
+            ><span class="service-hub">Dental:</span> consulta y limpieza dental
+            preventiva</span
+          >
+          (2 al año) más seguro dental con cobertura de $5,000.
+        </p>
+      </div>
+      <div class="service-pack-container">
+        <img src="./hogar.svg" alt="" />
+        <p>
+          <span class="service"
+            ><span class="service-hub">Hogar:</span> plomero, electricista,
+            cerrajero y vidriero </span
+          >(2 al año con cobertura de $599 por evento).
+        </p>
+      </div>
+      <div class="service-pack-container">
+        <img src="./auto.svg" alt="" />
+        <p>
+          <span class="service"
+            ><span class="service-hub">Auto:</span> grúa, cambio de llanta</span
+          >, paso de corriente, abasto de gasolina (2 al año).
+        </p>
+      </div>
+      <div class="footnotes">
+        <p>
+          *El servicio debe estar activo durante 72 hrs. antes de solicitar una
+          grúa.
+        </p>
+        <p>*Promedio de costos mensuales de seguros y/o asistencias</p>
+        <p>*Aplican TyC.</p>
+      </div>
+      <button
+        class="to-bottom"
+        onclick=" openNewPage('page3'); closeBefore('page2');"
+      >
+        Conoce más
+      </button>
+    </div>
+    <div class="container page3" id="page3">
+      <a href="#" onclick=" backMainPage('page3')" id="close-button">
+        <img class="close-button" src="./back-button.svg" alt=""
+      /></a>
+      <div class="info-container">
+        <p class="subtitle">¿Cómo se paga?</p>
+        <span>Después de tu primer mes gratis,</span>
+        <p>se hará un cargo por solo $69 mxn al mes a tu RappiCard.</p>
+      </div>
+      <div class="info-container">
+        <p class="subtitle">¿Cómo se cancela?</p>
+        <p>
+          La puedes cancelar en <span>cualquier momento</span> cualquier momento
+          desde tu cuenta <span>online</span> de RappiCard Assist.
+        </p>
+      </div>
+      <div class="info-container">
+        <p class="subtitle">¿Cómo solicito los beneficios?</p>
+        <p>
+          Desde la app de RappiCard en la sección “RappiCard Assist”. Recuerda
+          que la membresía de asistencia y protección personal es brindada por
+          WOOW.
+        </p>
+      </div>
+      <div class="service-pack-container">
+        <input type="checkbox" id="checkbox1" name="miCheckbox1" />
+        <p class="accept-payment-text">
+          Acepto que se realice un cobro mensual a mi RappiCard por $69 mxn al
+          mes a partir del XX/XX/XX con renovación automática.
+        </p>
+      </div>
+      <div class="service-pack-container">
+        <input type="checkbox" id="checkbox2" name="miCheckbox2" />
+        <p>Acepto Términos y Condiciones</p>
+      </div>
+      <div class="finger-slider-container">
+        <p class="slider-label">Desliza para:</p>
+        <div class="finger-slider-subcontainer">
+          <div class="slider-container">
+            <div id="slider" class="slider">
+              <div id="progressBar"></div>
+              <span>Iniciar mes de prueba</span>
+              <div id="slider-handle" class="slider-handle">
+                <img src="./arrow.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container page4" id="page4">
+      <a
+        href="#"
+        id="close-button"
+        onclick="brazeBridge.logClick();brazeBridge.closeMessage()"
+      >
+        <img class="close-button" src="./close-button.png" alt=""
+      /></a>
+      <div id="globos">
+
+    </div>
+      <p id="success-title" class="title">
+        ¡Felicidades, ya tienes RappiCard Assist!
+      </p>
+      <p id="success-description" class="page4-email-text">
+        Pronto recibirás un mail con los detalles de confirmación de tu
+        membresía.
+      </p>
+        <img class="logo-white-suscripcion-activa" id="logo-white-suscripcion-activa" src="./Logo-white.svg" alt="" />
+      <div class="footer">
+        <img id="logo-white-footer" src="./Logo-white.svg" alt="" />
+        <!-- onclick="sendToSOO()" -->
+        <button id="Ir-a-ver">¡Explorar mis beneficios!</button>
+      </div>
+    </div>
+    <script>
+      const dataStructureIfLogged = () => {
+        const user = {
+          idRappiCard: "MX_7260000002",
+        };
+        const configuration = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(user),
+        };
+        return configuration;
+      };
+      async function getIfLogged() {
+        const configuration = dataStructureIfLogged();
+        const response = await fetch(
+          "https://apirappicard.tiprotec.com/api/v1/customer-show",
+          configuration
+        );
+        
+        const data = await response.json();
+        console.log(data);
+        return data;
+      }
+    </script>
+    <script src="./serviceToken.js"></script>
+    <script>
+      var urlSSO = "";
+      let pruebaTexto = "prueba";
+      const dataStructureRegister = (
+        nombre,
+        apellidoPaterno,
+        apellidoMaterno,
+        telefono,
+        correo,
+        idRappiCard,
+        TOKEN
+      ) => {
+        const user = {
+          nombres: `${nombre}`,
+          apellidoPaterno: `${apellidoPaterno}`,
+          apellidoMaterno: `${apellidoMaterno}`,
+          telefono: `${telefono}`,
+          correo: `${correo}`,
+          producto: `1`,
+          idRappiCard: `${idRappiCard}`,
+        };
+
+        const configuration = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${TOKEN}`,
+          },
+          body: JSON.stringify(user),
+        };
+        return configuration;
+      };
+
+      const fetchDataRegister = async (
+        nombre,
+        apellidoPaterno,
+        apellidoMaterno,
+        telefono,
+        correo,
+        idRappiCard
+      ) => {
+        const TOKEN = await getToken();
+        console.log(
+          nombre,
+          apellidoPaterno,
+          apellidoMaterno,
+          telefono,
+          correo,
+          idRappiCard
+        );
+        const configuration = dataStructureRegister(
+          nombre,
+          apellidoPaterno,
+          apellidoMaterno,
+          telefono,
+          correo,
+          idRappiCard,
+          TOKEN
+        );
+        const response = await fetch(
+          "https://apirappicard.tiprotec.com/api/v1/customer-register",
+          configuration
+        );
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data);
+          urlSSO = data.linkSSO;
+          isDragging = false;
+          openNewPage("page4");
+        } else {
+          console.log(response);
+        }
+      };
+      function sendToSOO() {
+        window.location.href = urlSSO;
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        async function userIsLogged() {
+            const ifLogged = await getIfLogged();
+            console.log(ifLogged);
+            if (ifLogged?.estatus == "success") {
+              let usaRappiCardPage = document.getElementById(`page4`);
+              usaRappiCardPage.style.display = "flex";
+              usaRappiCardPage.classList.remove("slide-in-bottom-reverse");
+              usaRappiCardPage.classList.add("slide-in-bottom");
+              let successTitle = document.getElementById("success-title");
+            let successDescription = document.getElementById(
+              "success-description"
+            );
+            let balloons = document.createElement("img");
+            balloons.src = "./suscripcion-activa.png";
+            balloons.style.display = "block"
+            balloons.style.margin = "0 auto"
+            balloons.style.width = "220px"
+            let globos = document.getElementById("globos");
+            globos.appendChild(balloons);
+            successTitle.innerHTML = "¡Tu suscripción esta activa!";
+            successTitle.style.margin ="0 auto"
+            successDescription.style.display =
+              "none";
+            document.getElementById("logo-white-suscripcion-activa").style.display = "block"
+            //Revierte esto si no aplica este bloque
+            document.getElementById("logo-white-footer").style.display = "none"
+            let successButton = document.getElementById("Ir-a-ver");
+            successButton.textContent= "Ir a mis beneficios";
+              urlSSO = ifLogged.linkSSO;
+              console.log(urlSSO);
+            } 
+            else if(ifLogged?.estatus == "failed") {
+              let usaRappiCardPage = document.getElementById(`mainPage`);
+              let pageLoaderDisplay = document.getElementById(`pageLoader`);
+              let shadow = document.getElementById(`black-shadow`);
+              shadow.style.display = "flex";
+              usaRappiCardPage.style.display = "flex";
+              usaRappiCardPage.classList.remove("slide-in-bottom-reverse");
+              usaRappiCardPage.classList.add("slide-in-bottom");
+              const slider = document.getElementById("slider");
+              const handle = document.getElementById("slider-handle");
+              const progressBar = document.getElementById("progressBar");
+              const checkbox1 = document.getElementById("checkbox1");
+              const checkbox2 = document.getElementById("checkbox2");
+              var isDragging = false;
+              function checkedBoxes() {
+                if (checkbox1.checked && checkbox2.checked) {
+                  handle.style.backgroundColor = "#6168db";
+                  handle.addEventListener("touchstart", function () {
+                    isDragging = true;
+                  });
+                } else {
+                  handle.style.backgroundColor = "#ECEFF3";
+                  handle.addEventListener("touchstart", function () {
+                    isDragging = false;
+                  });
+                }
+              }
+              document.addEventListener("touchend", function () {
+                slider.style.animation = "none";
+                const sliderRect = slider.getBoundingClientRect();
+
+                if(sliderRect.width > 300){
+                  if (handle.style.left >= "85%") {
+                    console.log('contratado')
+                    // fetchDataRegister(
+                    //   "OmarFake",
+                    //   "Morales",
+                    //   "Ramirez",
+                    //   "526698183488",
+                    //   "OmarFakeMorales@hotmail.com",
+                    //   "MX_7260000003"
+                    // );
+                    openNewPage('page4')
+                    isDragging = false;
+                  }
+
+                }
+                if(sliderRect.width <= 300){
+                  if (handle.style.left >= "81%") {
+                    console.log('contratado')
+                    // fetchDataRegister(
+                    //   "OmarFake",
+                    //   "Morales",
+                    //   "Ramirez",
+                    //   "526698183488",
+                    //   "OmarFakeMorales@hotmail.com",
+                    //   "MX_7260000003"
+                    // );
+                    openNewPage('page4')
+                    isDragging = false;
+                  }
+                }
+                if (isDragging) {
+                  handle.style.left = "6px"; // Devuelve el círculo a la posición inicial
+                  progressBar.style.width = "40px";
+                  isDragging = false;
+                }
+              });
+              document.addEventListener("touchmove", function (event) {
+                if (isDragging) {
+                  slider.style.animation =
+                    "borderChange 1.5s ease-in-out infinite";
+                  const sliderRect = slider.getBoundingClientRect();
+                  const handleRect = handle.getBoundingClientRect();
+                  let handlePosition =
+                    event.touches[0].clientX -
+                    sliderRect.left -
+                    handleRect.width / 2;
+ // Posición del círculo relativa al slider
+                  const sliderWidth = sliderRect.width - handleRect.width;
+                  console.log(sliderRect.width)
+                 
+                  const percentage = (handlePosition / sliderWidth) * 90;
+          
+                  // Limita la posición del círculo dentro del slider
+                  if (percentage >= 0 && percentage <= 100) {
+                    handle.style.left = percentage + "%";
+                    let progressBarBackGround = percentage + 9;
+                    progressBar.style.width = progressBarBackGround + "%";
+                  } else if (percentage < 0) {
+                    handle.style.left = "6px";
+                  } else {
+                    handle.style.left = "100%";
+                  }
+                  // Evita que el círculo sobresalga del contenedor
+                  const handleLeft = parseFloat(handle.style.left);
+                  const maxLeft =
+                    100 - (handleRect.width / sliderRect.width) * 120;
+                  if (handleLeft > maxLeft) {
+                    handle.style.left = maxLeft + "%";
+                    progressBar.style.width = maxLeft + 10 + "%";
+                  }
+                  // if (percentage >= 85) {
+                  // }
+                }
+              });
+              checkbox1.addEventListener("change", checkedBoxes);
+              checkbox2.addEventListener("change", checkedBoxes);
+              setTimeout(() => {
+                pageLoaderDisplay.style.display = "none";
+              }, 300);
+            }
+           else{
+            let usaRappiCardPage = document.getElementById(`page4`);
+            usaRappiCardPage.style.display = "flex";
+            usaRappiCardPage.classList.remove("slide-in-bottom-reverse");
+            usaRappiCardPage.classList.add("slide-in-bottom");
+            let successTitle = document.getElementById("success-title");
+            let successDescription = document.getElementById(
+              "success-description"
+            );
+            successTitle.innerHTML = "Lo sentimos, algo salió mal.";
+            successDescription.innerHTML =
+              "No se pudo contactar con el servicio, intenta de nuevo más tarde.";
+            let successButton = document.getElementById("Ir-a-ver");
+            successButton.style.display = "none";
+          }
+        }
+        userIsLogged();
+      });
+      document
+        .getElementById("Ir-a-ver")
+        .addEventListener("click", function () {
+          // Llamar a la función dentro del evento
+          sendToSOO();
+        });
+      function openNewPage(id) {
+        let usaRappiCardPage = document.getElementById(`${id}`);
+        let mainPage = document.getElementById("mainPage");
+        usaRappiCardPage.style.display = "flex";
+        usaRappiCardPage.classList.remove("slide-in-bottom-reverse");
+        usaRappiCardPage.classList.add("slide-in-bottom");
+        setTimeout(function () {
+          mainPage.style.display = "none";
+        }, 200);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      function backMainPage(id) {
+        if (id === "page3") {
+          let page2 = document.getElementById("page2");
+          page2.classList.remove("slide-in-bottom");
+          page2.style.display = "flex";
+        }
+        let currentPage = document.getElementById(`${id}`);
+        let mainPage = document.getElementById("mainPage");
+        currentPage.classList.add("slide-in-bottom-reverse");
+        mainPage.style.display = "-webkit-flex";
+        mainPage.style.display = "flex";
+        mainPage.classList.remove("slide-in-bottom");
+        setTimeout(function () {
+          mainPage.style.removeProperty("padding");
+          mainPage.style.removeProperty("position");
+          currentPage.style.display = "none";
+        }, 200);
+      }
+      function closeBefore(id) {
+        let closePage = document.getElementById(`${id}`);
+        setTimeout(function () {
+          closePage.style.display = "none";
+        }, 300);
+      }
+      function prueba(item) {
+        console.log(item);
+      }
+    </script>
+  </body>
+</html>
