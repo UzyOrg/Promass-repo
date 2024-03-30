@@ -25,31 +25,33 @@
       >
         <img class="close-button" src="./back-button.svg" alt=""
       /></a>
-      <object class="logo" data="./Logo.svg" type="image/svg+xml"></object>
-      <h1>¿Qué es?</h1>
-      <div class="text-description">
-        <p>Membresía de <span>protección</span> para tu:</p>
-        <div class="proteccion-iconos">
-          <div class="salud">
-            <img src="./corazon-blanco.svg" alt="" />
-            <p>Salud</p>
+      <div class="content-button-container">
+        <object class="logo" data="./Logo.svg" type="image/svg+xml"></object>
+        <h1>¿Qué es?</h1>
+        <div class="text-description">
+          <p>Membresía de <span>protección</span> para tu:</p>
+          <div class="proteccion-iconos">
+            <div class="salud">
+              <img src="./corazon-blanco.svg" alt="" />
+              <p>Salud</p>
+            </div>
+            <div class="casa">
+              <img src="./hogar-blanco.svg" alt="" />
+              <p>Casa</p>
+            </div>
+            <div class="auto">
+              <img src="./auto-blanco.svg" alt="" />
+              <p>Auto</p>
+            </div>
           </div>
-          <div class="casa">
-            <img src="./hogar-blanco.svg" alt="" />
-            <p>Casa</p>
-          </div>
-          <div class="auto">
-            <img src="./auto-blanco.svg" alt="" />
-            <p>Auto</p>
-          </div>
+          <p>
+            Incluye: consultas médicas online, check up, grúa, cerrajero y más
+            <span>por solo $69 mxn al mes.</span>
+          </p>
         </div>
-        <p>
-          Incluye: consultas médicas online, check up, grúa, cerrajero y más
-          <span>por solo $69 mxn al mes.</span>
-        </p>
+        <p>¡Recibe GRATIS tu primer mes!</p>
       </div>
-      <p>¡Recibe GRATIS tu primer mes!</p>
-      <button class="to-bottom" onclick="openNewPage('page2')">
+      <button class="" onclick="openNewPage('page2')">
         Conoce más
       </button>
     </div>
@@ -58,6 +60,7 @@
       <a href="#" onclick=" backMainPage('page2')" id="close-button">
         <img class="close-button" src="./back-button.svg" alt=""
       /></a>
+      <div class="content-button-container">
       <h2>¿Cuánto pagas por una membresía de asistencia?</h2>
       <div class="two-cards-container">
         <div class="left-card card">
@@ -112,17 +115,21 @@
         <p>*Promedio de costos mensuales de seguros y/o asistencias</p>
         <p>*Aplican TyC.</p>
       </div>
+    </div>
       <button
-        class="to-bottom"
+        class=""
         onclick=" openNewPage('page3'); closeBefore('page2');"
       >
         Conoce más
       </button>
     </div>
+
     <div class="container page3" id="page3">
       <a href="#" onclick=" backMainPage('page3')" id="close-button">
         <img class="close-button" src="./back-button.svg" alt=""
       /></a>
+      <div class="content-button-container">
+
       <div class="info-container">
         <p class="subtitle">¿Cómo se paga?</p>
         <span>Después de tu primer mes gratis,</span>
@@ -154,6 +161,7 @@
         <input type="checkbox" id="checkbox2" name="miCheckbox2" />
         <p>Acepto Términos y Condiciones</p>
       </div>
+    </div>
       <div class="finger-slider-container">
         <p class="slider-label">Desliza para:</p>
         <div class="finger-slider-subcontainer">
@@ -468,6 +476,7 @@
           sendToSOO();
         });
       function openNewPage(id) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
         let usaRappiCardPage = document.getElementById(`${id}`);
         let mainPage = document.getElementById("mainPage");
         usaRappiCardPage.style.display = "flex";
@@ -476,7 +485,6 @@
         setTimeout(function () {
           mainPage.style.display = "none";
         }, 200);
-        window.scrollTo({ top: 0, behavior: "smooth" });
       }
       function backMainPage(id) {
         if (id === "page3") {
