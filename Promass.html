@@ -159,9 +159,16 @@
       </div>
       <div class="service-pack-container">
         <input type="checkbox" id="checkbox2" name="miCheckbox2" />
-        <span>Acepto</span> <a href="https://rcard.mx/TyC_RAPPICARD_ASSIST">Términos y Condiciones.</a>
+        <p onclick="openTyC()">Acepto Términos y Condiciones.</p>
       </div>
-      
+      <div class="modalTyC" id="modalTyC">
+        <img onclick="closeTyC()" src="./close-button.png"/>
+       <h3>Términos y Condiciones</h3>
+       
+        <iframe src="https://rcard.mx/TyC_RAPPICARD_ASSIST" width="100%" height="100%">
+          Este navegador no soporta PDFs. Por favor descarga el PDF para verlo: <a href="https://rcard.mx/TyC_RAPPICARD_ASSIST">Descargar PDF</a>.
+      </iframe>
+      </div>
       <div class="finger-slider-container">
         <p class="slider-label">Desliza para:</p>
         <div class="finger-slider-subcontainer">
