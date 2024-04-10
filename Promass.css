@@ -389,14 +389,14 @@ input[type="checkbox"] {
   opacity: 0;
   position: absolute;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   margin: auto;
-  width: 80%;
-  height: 60%;
+  width: 90%;
+  height: 80%;
   background-color: white;
   z-index: 100;
   border-radius: 20px;
